@@ -1,0 +1,1 @@
+gcc -no-pie -z execstack -fno-stack-protector -o level2 level2.c

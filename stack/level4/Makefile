@@ -1,0 +1,1 @@
+gcc -m32 -fno-stack-protector -o level4 level4.c

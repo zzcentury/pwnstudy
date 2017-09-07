@@ -1,0 +1,1 @@
+gcc -m32 -z execstack -fno-stack-protector -no-pie -o level1 level1.c
