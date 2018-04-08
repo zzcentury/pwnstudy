@@ -1,0 +1,45 @@
+#site_nav_under, #ad_under_post_holder, #comment_form_container,blog_news_kb,google_ad_c2, #comment_nav{ display:none !important;}
+div.post div.entry {
+    font-family: “Microsoft YaHei”,Georgia, "Times New Roman", Times, sans-serif
+}
+
+div.post div.entry h1, div.post div.entry h2, div.post div.entry h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+   font-family: “Microsoft YaHei”;
+}
+
+div.post div.entry h1 {
+    padding: 5px;
+    color: white;
+    background-color: gray;
+   font-family: “Microsoft YaHei”;
+}
+
+div.post h2 {
+    font-size: 22px;
+    line-height: 100%;
+}
+
+div.post div.entry pre.code {
+    font-family: Consolas border-style : dashed;
+    border-left: solid 5px #6ce26c
+}
+
+div#information {
+    background-color: #f8f8ee;
+    border: solid 1px #e8e7d0;
+    padding: 5px 10px 0px 10px;
+    min-height: 10px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    color: #666666
+}
+
+.cnblogs_code {
+    border-left: #58CE60 5px solid !important;
+}
+
+#site_nav_under, .c_ad_block, #under_post_news, #under_post_kb {
+    display: none !important;
+}
