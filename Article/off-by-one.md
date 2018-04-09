@@ -10,7 +10,7 @@
 
 在linux堆分配的基本单位是chunk,下图是chunk的基本结构
 
-<center>![](./Images/2.1.png)</center>
+![](./Images/2.1.png)
 
 如果本 chunk 前面的 chunk 是空闲的，那么第一部分 prev_size 会记录前面一个 chunk 的大小，第二部分是本 chunk 的 size ,因为它的大小需要8字节对齐，所以 size 的低三位一定会空闲出来，这时候这三个位置就用作三个 Flag 
 
@@ -31,7 +31,7 @@
 
 当在64位linux下运行执行上面的堆块分配时，分配完成后，A,B的堆块结构如下：
 
-<center>![](./Images/2.2.png)</center>
+![](./Images/2.2.png)
 
 此时B堆块的presize域作为A堆块的数据区
 
@@ -104,7 +104,7 @@ Play：先过一个cookie验证，这里可以用python中的ctypes库绕过
 
 之后分配一个堆块，堆块大小用户自定义(不得大于0x1000),分配的堆块结构如下：
 
-<center>![](./Images/2.3.png)</center>
+![](./Images/2.3.png)
 
 四个字节保存flag位，其余字节用作保存name.分配成功后将堆块地址，cookie,以及chunk大小存到保存在bss段中对应的位置
 
@@ -182,7 +182,7 @@ Change：对指定的chunk 重写，存在off-by-one漏洞，可将下一个chun
 
 此时堆中情况如下：
 
-<center>![](./Images/2.4.png)</center>
+![](./Images/2.4.png)
 
 在重新编辑chunk 1,在此利用off-by-one将chunk 2的size覆盖为0x100
 
@@ -194,7 +194,7 @@ Change：对指定的chunk 重写，存在off-by-one漏洞，可将下一个chun
 
 堆中情况变化如下：
 
-<center>![](./Images/2.5.png)</center>
+![](./Images/2.5.png)
 
 再free chunk2
     
