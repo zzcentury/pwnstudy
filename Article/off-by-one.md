@@ -1,3 +1,5 @@
+> 本文首发于freebuf
+
 ## 背景
 在Freebuf上看到一篇文章[Exim Off-by-One RCE漏洞（CVE-2018-6789）利用分析(附EXP)](http://www.freebuf.com/vuls/166519.html)，在ctf中经常能遇到off-by-one知识点的题型，想不到出现在了真实软件中，有点惊讶，就此机会，总结一些off-by-one的有关知识点
 

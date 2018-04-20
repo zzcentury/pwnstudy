@@ -1,3 +1,5 @@
+> 本文首发于合天智汇微信公众号
+
 本文介绍一种CTF中的高级rop技巧-Return-to-dl-resolve，不久前的0CTF中的babystack和blackhole就用到了这个技巧。
 
 ## 预备知识

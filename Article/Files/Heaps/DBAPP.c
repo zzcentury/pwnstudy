@@ -76,7 +76,7 @@ int add_item(){
 				itemlist[i].name = (char*)malloc(length);
 				printf("Please enter the name of item:");
 				size = read(0,itemlist[i].name,length);
-				itemlist[i].name[size] = '\x00';
+				//itemlist[i].name[size] = '\x00';
 				num++;
 				break;
 			}
@@ -110,7 +110,7 @@ void change_item(){
 			length = atoi(lengthbuf);
 			printf("Please enter the new name of the item:");
 			readsize = read(0,itemlist[index].name,length);
-			*(itemlist[index].name + readsize) = '\x00';
+			//*(itemlist[index].name + readsize) = '\x00';
 		}else{
 			puts("invaild index");
 		}
