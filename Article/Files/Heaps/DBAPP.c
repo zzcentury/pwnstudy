@@ -58,13 +58,13 @@ void show_item(){
 
 int add_item(){
 
-	char sizebuf[8] ;
+	char sizebuf[16] ;
 	int length ;
 	int i ;
 	int size ;
 	if(num < 100){
 		printf("Please enter the length of item name:");
-		read(0,sizebuf,8);
+		read(0,sizebuf,16);
 		length = atoi(sizebuf);
 		if(length == 0){
 			puts("invaild length");
